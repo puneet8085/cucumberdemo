@@ -1,5 +1,6 @@
 package Pages;
 
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,11 +12,13 @@ import utils.CommonUtils;
 import utils.Driver;
 
 public class OrderHistoryPage extends Driver {
-
+private Logger logger;
 
     public OrderHistoryPage()
     {
         objcommonutils = new CommonUtils();
+
+        logger =Logger.getLogger(this.getClass());
         PageFactory.initElements(driver,this);
     }
     static  int ordercount=0;
@@ -40,10 +43,10 @@ public class OrderHistoryPage extends Driver {
     {
        if(Newordercount==(ordercount+1))
        {
-           System.out.println("Order is placed Successfully");
+           logger.info("Order is placed Successfully");
        }
        else {
-           System.out.println("Order is not placed Successfully");
+           logger.info("Order is not placed Successfully");
            Assert.fail();
        }
     }

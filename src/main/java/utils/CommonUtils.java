@@ -11,6 +11,10 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.xml.ws.wsaddressing.W3CEndpointReference;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
 
 public class CommonUtils extends Driver {
 
@@ -22,14 +26,12 @@ public class CommonUtils extends Driver {
     //click on element
     public void clickElement(WebElement element)
     {
-        new WebDriverWait(driver,20).until(ExpectedConditions.visibilityOf(element));
         element.click();
     }
 
     //enter text in a WebElement
     public void enterText(WebElement element,String text)
     {
-        new WebDriverWait(driver,20).until(ExpectedConditions.visibilityOf(element));
         if(element.isEnabled())
         {
             element.click();
@@ -39,31 +41,17 @@ public class CommonUtils extends Driver {
         }
     }
 
-    //Wait for page load
-    public static void waitForPageLoad(WebDriver driver)
+    //get current date time with seconds
+    public final static String getDateTimeWithSec()
     {
-        ExpectedCondition<Boolean> expectation = new ExpectedCondition<Boolean>() {
-
-            public Boolean apply(@NullableDecl WebDriver driver) {
-                return ((JavascriptExecutor) driver).executeScript("return document ready state").equals("complete");
-            }
-        };
-        Wait<WebDriver> wait = new WebDriverWait(driver,30);
-        try
-        {
-            wait.until(expectation);
-        }
-        catch (Throwable error)
-        {
-            error.printStackTrace();
-        }
+        DateFormat df= new SimpleDateFormat("yyyy-MM-dd_hh_mm_ss_S");
+        df.setTimeZone(TimeZone.getTimeZone("GNT"));
+        return df.format(new Date());
     }
-
 
     //select checkbox
     public void selectCheckbox(WebElement element)
     {
-        new WebDriverWait(driver,20).until(ExpectedConditions.visibilityOf(element));
             element.click();
         }
 

@@ -1,6 +1,6 @@
 package Pages;
 
-import org.apache.poi.ss.usermodel.Table;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -13,30 +13,34 @@ import java.util.WeakHashMap;
 
 public class PersonalInfoPage extends Driver {
 
+    private Logger logger;
+    public static String fname;
+
     @FindBy(xpath = "//input[@id='firstname']")
     WebElement txtfirstname;
 
     @FindBy(xpath = "//input[@id='old_passwd']")
     WebElement txtoldpassword;
 
-@FindBy(xpath = "//button[@name='submitIdentity']")
-WebElement btnsave;
+    @FindBy(xpath = "//button[@name='submitIdentity']")
+    WebElement btnsave;
 
     public PersonalInfoPage()
     {
         objcommonutils= new CommonUtils();
+
+        logger =Logger.getLogger(this.getClass());
         PageFactory.initElements(driver,this);
-       // objcommonutils.waitForPageLoad(driver);
+
     }
-public static String fname;
     //enter details
     public void enterDetails(String fname, String password)
     {
         new WebDriverWait(driver,20).until(ExpectedConditions.visibilityOf(txtoldpassword));
         objcommonutils.enterText(txtfirstname,fname);
        fname= txtfirstname.getAttribute("value");
-
         objcommonutils.enterText(txtoldpassword,password);
+        logger.info("user enter first name and password");
 
     }
 
@@ -45,5 +49,6 @@ public static String fname;
     {
         new WebDriverWait(driver,20).until(ExpectedConditions.visibilityOf(btnsave));
         objcommonutils.clickElement(btnsave);
+        logger.info("User clicked on save button");
     }
 }

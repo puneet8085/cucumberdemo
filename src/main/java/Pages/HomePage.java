@@ -1,6 +1,6 @@
 package Pages;
 
-import org.apache.commons.math3.analysis.function.Exp;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -12,6 +12,7 @@ import utils.CommonUtils;
 import utils.Driver;
 
 public class HomePage extends Driver {
+    private Logger logger;
 
     @FindBy(xpath = "//a[@class='login'][contains(text(),'Sign in')]")
     WebElement linksignin;
@@ -40,7 +41,9 @@ public class HomePage extends Driver {
     public  HomePage()
     {
         objcommonutils= new CommonUtils();
-        PageFactory.initElements(driver,this);
+
+        logger =Logger.getLogger(this.getClass());
+        PageFactory.initElements(driver, this);
     }
 //click on my personal info link
     public void clickMyPersonalInfo()
@@ -48,14 +51,15 @@ public class HomePage extends Driver {
     {
         new WebDriverWait(driver,20).until(ExpectedConditions.visibilityOf(linkmypersonalinfo));
         objcommonutils.clickElement(linkmypersonalinfo);
+        logger.info("user clicked on my personal info link");
     }
 
     //verify updated first name
-    public void verifyFirstName()
+    public void verifyFirstName(String fname)
     {
-        if(username.getText().contains("Tester"))
+        if(username.getText().contains(fname))
         {
-            System.out.println("First Name Updated Successfully");
+            logger.info("first name updated successfully");
         }
         else
         {
@@ -68,11 +72,13 @@ public class HomePage extends Driver {
     {
         new WebDriverWait(driver,20).until(ExpectedConditions.visibilityOf(btnproceedtocheckout));
         objcommonutils.clickElement(btnproceedtocheckout);
+        logger.info("user clicked on proceed  to checkout button");
     }
     //click on Sign in Link from Header Menu
     public  void clickSignInFromMenu()
     {
         objcommonutils.clickElement(linksignin);
+        logger.info("user clicked on proceed button");logger.info("user clicked in signin from menu");
     }
 
     //click on T-shirt option
@@ -80,6 +86,7 @@ public class HomePage extends Driver {
     {
         new WebDriverWait(driver,20).until(ExpectedConditions.visibilityOf(menutshirt));
         objcommonutils.clickElement(menutshirt);
+        logger.info("user clicked on tshirt menu");
     }
 
     //click on add to cart
@@ -89,6 +96,7 @@ public class HomePage extends Driver {
         Actions ac= new Actions(driver);
         ac.moveToElement(tshirtimage).perform();
         ac.click(btnaddcart).perform();
+        logger.info("user clicked on add to cart");
     }
 
     //click on my order link
@@ -96,6 +104,7 @@ public class HomePage extends Driver {
     {
         new WebDriverWait(driver,20).until(ExpectedConditions.visibilityOf(linkmyorders));
         objcommonutils.clickElement(linkmyorders);
+        logger.info("user clicked on my order link");
     }
 
 }

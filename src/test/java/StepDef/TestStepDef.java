@@ -1,6 +1,7 @@
 package StepDef;
 
 import Pages.*;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -11,16 +12,12 @@ public class TestStepDef {
     OpenApplication openApplication= new OpenApplication();
     HomePage homePage = new HomePage();
     AuthenticationPage authenticationPage = new AuthenticationPage();
-    MyAccountPage myAccountPage = new MyAccountPage();
     OrderHistoryPage orderHistoryPage = new OrderHistoryPage();
     CartSummaryPage cartSummaryPage = new CartSummaryPage();
     AddressPage addressPage = new AddressPage();
     ShippingPage shippingPage= new ShippingPage();
     PayementPage payementPage = new PayementPage();
     OrderSummaryPage orderSummaryPage = new OrderSummaryPage();
-    OrderConfirmationPage orderConfirmationPage = new OrderConfirmationPage();
-
-
 
     @Given("^I loggedIn into application with email address as \"([^\"]*)\" and password as \"([^\"]*)\"$")
     public void LoggedInToApplication(String email, String password) throws Throwable {
@@ -76,10 +73,9 @@ public class TestStepDef {
         personalInfoPage.clickSave();
     }
 
-    @Then("^I can see updated name of user next to Signout option$")
-    public void verifyUpdatedDetails() throws Throwable {
-        homePage.verifyFirstName();
+    @Then("^I can see updated \"([^\"]*)\" of user next to Signout option$")
+    public void verifyUpdatedDetails(String fname) throws Throwable {
+        homePage.verifyFirstName(fname);
     }
-
 
 }

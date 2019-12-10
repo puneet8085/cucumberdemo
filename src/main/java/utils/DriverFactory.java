@@ -10,33 +10,18 @@ public class DriverFactory {
     public static WebDriver getDriver() throws Exception {
         ReadProperties.readProperties();
         String Browser = ReadProperties.Browser;
-        switch (Browser) {
-            case "IE":
-                System.setProperty("webdriver.ie.driver", "./driver/IEDriverServer.exe");
-                return new InternetExplorerDriver();
-            case "Chrome":
-                System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
-                return new ChromeDriver();
-            default:
-                System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
-                return new FirefoxDriver();
+        if ("IE".equals(Browser)) {
+            System.setProperty("webdriver.ie.driver", "./driver/IEDriverServer.exe");
+            return new InternetExplorerDriver();
+        } else if ("Chrome".equals(Browser)) {
+            System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+            return new ChromeDriver();
         }
+        System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
+        return new FirefoxDriver();
     }
 
     public static void closeDriver(WebDriver driver) throws Exception {
-        ReadProperties.readProperties();
-        String Browser = ReadProperties.Browser;
-        try {
-            switch (Browser) {
-                case "IE":
-                    driver.close();
-                case "Chrome":
-                    driver.close();
-                default:
-                    driver.close();
-            }
-        }
-        catch (Exception e) {
-            e.getStackTrace();
-        }}
+        driver.quit();
+    }
         }
