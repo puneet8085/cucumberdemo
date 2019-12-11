@@ -2,34 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0378544a-197f-4484-a981-1cf3cc025d78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/reports/cucumber-reports/formatter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/cucumber-reports/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/cucumber-reports/jquery-1.8.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/cucumber-reports/report.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/cucumber-reports/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ScreenshotLib.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/ordertshirt.feature" beforeDir="false" afterPath="$PROJECT_DIR$/feature/ordertshirt.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/updatepersonalinfo.feature" beforeDir="false" afterPath="$PROJECT_DIR$/feature/updatepersonalinfo.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/AddressPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/AddressPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/AuthenticationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/AuthenticationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/CartSummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/CartSummaryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber-reports/report.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/MyAccountPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OpenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/OpenApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OrderConfirmationPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OrderHistoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/OrderHistoryPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OrderSummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/OrderSummaryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/PayementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/PayementPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/PersonalInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/PersonalInfoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ShippingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ShippingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resource/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resource/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ReadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ReadProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDef/TestStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/TestStepDef.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +57,7 @@
       <recent name="C:\CucumberDemo\driver" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager" selected="Cucumber java.Feature: ordertshirt">
     <configuration name="Feature: ordertshirt" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/feature/ordertshirt.feature" />
@@ -147,9 +128,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Runner" />
-        <item itemvalue="Cucumber java.Feature: updatepersonalinfo" />
         <item itemvalue="Cucumber java.Feature: ordertshirt" />
+        <item itemvalue="Cucumber java.Feature: updatepersonalinfo" />
+        <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber java.Feature: test" />
       </list>
     </recent_temporary>
@@ -177,7 +158,34 @@
       <option name="presentableId" value="Default" />
       <updated>1575423791677</updated>
     </task>
+    <task id="LOCAL-00001" summary="FInal code">
+      <created>1576018797802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576018797803</updated>
+    </task>
+    <task id="LOCAL-00002" summary="pom.xml updated">
+      <created>1576019300449</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576019300450</updated>
+    </task>
+    <task id="LOCAL-00003" summary="pom.xml updated">
+      <created>1576019785396</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576019785396</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FInal code" />
+    <MESSAGE value="pom.xml updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Log_Highlighting_(ideolog)" timestamp="1576010594626">
@@ -188,6 +196,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1575429281828" />
+    <state x="479" y="222" width="407" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576022547898">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="479" y="222" width="407" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1576022547898" />
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576011484523">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -196,38 +208,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="412" y="217" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1576010709741" />
-    <state width="1323" height="196" key="GridCell.Tab.0.bottom" timestamp="1576014899930">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1576019781859">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="196" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1576014899930" />
-    <state width="1323" height="196" key="GridCell.Tab.0.center" timestamp="1576014899930">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1576019781859" />
+    <state width="1323" height="196" key="GridCell.Tab.0.bottom" timestamp="1576029205208">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="196" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1576014899930" />
-    <state width="1323" height="196" key="GridCell.Tab.0.left" timestamp="1576014899930">
+    <state width="1323" height="196" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1576029205208" />
+    <state width="1323" height="196" key="GridCell.Tab.0.center" timestamp="1576029205208">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="196" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1576014899930" />
-    <state width="1323" height="196" key="GridCell.Tab.0.right" timestamp="1576014899930">
+    <state width="1323" height="196" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1576029205208" />
+    <state width="1323" height="196" key="GridCell.Tab.0.left" timestamp="1576029205207">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="196" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1576014899930" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1576012222906">
+    <state width="1323" height="196" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1576029205207" />
+    <state width="1323" height="196" key="GridCell.Tab.0.right" timestamp="1576029205208">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1576012222906" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1576012222906">
+    <state width="1323" height="196" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1576029205208" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1576027816698">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1576012222906" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1576012222906">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1576027816698" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1576027816696">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1576012222906" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1576012222906">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1576027816696" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1576027816696">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1576012222906" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1576027816696" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1576027816697">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1576027816697" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1576019795178">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1576019795178" />
     <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1576010581569">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

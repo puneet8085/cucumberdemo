@@ -15,12 +15,16 @@ public class PersonalInfoPage extends Driver {
 
     private Logger logger;
     public static String fname;
+    public static String lname;
 
     @FindBy(xpath = "//input[@id='firstname']")
     WebElement txtfirstname;
 
     @FindBy(xpath = "//input[@id='old_passwd']")
     WebElement txtoldpassword;
+
+    @FindBy(xpath ="//input[@id='lastname']")
+    WebElement txtlastname;
 
     @FindBy(xpath = "//button[@name='submitIdentity']")
     WebElement btnsave;
@@ -39,6 +43,7 @@ public class PersonalInfoPage extends Driver {
         new WebDriverWait(driver,20).until(ExpectedConditions.visibilityOf(txtoldpassword));
         objcommonutils.enterText(txtfirstname,fname);
        fname= txtfirstname.getAttribute("value");
+       lname=txtlastname.getAttribute("value");
         objcommonutils.enterText(txtoldpassword,password);
         logger.info("user enter first name and password");
 

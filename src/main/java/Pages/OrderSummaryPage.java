@@ -12,9 +12,12 @@ import utils.Driver;
 public class OrderSummaryPage extends Driver {
 
     private Logger logger;
-
+    public static String Orderid;
     @FindBy(xpath = "//span[contains(text(),'I confirm my order')]")
     WebElement btnconfirmorder;
+
+    @FindBy(xpath = "//div[@class='box order-confirmation']")
+    WebElement orderid;
 
 
     public OrderSummaryPage()
@@ -25,6 +28,13 @@ public class OrderSummaryPage extends Driver {
         PageFactory.initElements(driver,this);
     }
 
+    //get orderid from text
+    public void getOrderID()
+    {
+        Orderid=orderid.getText();
+        Orderid = Orderid.substring(146,(Orderid.length()-214));
+        logger.info("order id fetched successfully");
+    }
     //click on confirm my order
     public void ClickConfirmOrderBtn()
     {

@@ -32,7 +32,6 @@ public class TestStepDef {
     @When("^I go to T-shirt page and add a T-shirt into cart$")
     public void addTshirt() throws Throwable {
         homePage.clickMyOrder();
-        orderHistoryPage.GetOrderCount();
         homePage.clickTshirtMenu();
         homePage.clickAddToCart();
         homePage.clickProceedToCheckout();
@@ -47,13 +46,13 @@ public class TestStepDef {
         shippingPage.clickProceedBtn();
         payementPage.clickPayByCheck();
         orderSummaryPage.ClickConfirmOrderBtn();
+        orderSummaryPage.getOrderID();
         homePage.clickMyOrder();
 
     }
 
     @Then("^i can see order in order History$")
     public void verifyOrder() throws Throwable {
-        orderHistoryPage.GetOrderCount();
         orderHistoryPage.verifyOrder();
     }
 

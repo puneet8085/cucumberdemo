@@ -8,8 +8,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class DriverFactory {
 
     public static WebDriver getDriver() throws Exception {
-        ReadProperties.readProperties();
-        String Browser = ReadProperties.Browser;
+      String Browser=  ReadProperties.readProperties("Browser");
+
         if ("IE".equals(Browser)) {
             System.setProperty("webdriver.ie.driver", "./driver/IEDriverServer.exe");
             return new InternetExplorerDriver();

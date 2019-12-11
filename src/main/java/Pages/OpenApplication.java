@@ -20,10 +20,7 @@ private Logger logger;
 
     public OpenApplication openURL() throws Exception {
 
-        ReadProperties.readProperties();
-        String Browser = ReadProperties.Browser;
-        String URL = ReadProperties.URL;
-        driver.get(URL);
+        driver.get(ReadProperties.readProperties("URL"));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 

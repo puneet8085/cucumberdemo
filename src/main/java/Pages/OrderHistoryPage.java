@@ -24,30 +24,20 @@ private Logger logger;
     static  int ordercount=0;
     static int Newordercount;
 
+//verify order in order summary table
+    public void verifyOrder() {
+        int rowcount= driver.findElements(By.xpath("//table[@id='order-list']/tbody/tr")).size();
+        for(int i=1; i<=rowcount;i++){
 
-    //get order count on order history table
-    public void GetOrderCount() {
-        if (ordercount == 0) {
-            int row = driver.findElements(By.xpath("//table[@id='order-list']/tbody/tr")).size();
-            ordercount = row;
+            String rowtext = driver.findElement(By.xpath("//table[@id='order-list']/tbody/tr["+i+"]/td[1]/a")).getText();
+            while(rowtext.equals(OrderSummaryPage.Orderid))
+            {
+                logger.info("Order done Successfully");
+                break;
+            }
+
+
         }
-        else{
-            int row = driver.findElements(By.xpath("//table[@id='order-list']/tbody/tr")).size();
-            Newordercount = row;
 
-        }
-    }
-
-    //verify new order
-    public void verifyOrder()
-    {
-       if(Newordercount==(ordercount+1))
-       {
-           logger.info("Order is placed Successfully");
-       }
-       else {
-           logger.info("Order is not placed Successfully");
-           Assert.fail();
-       }
     }
 }

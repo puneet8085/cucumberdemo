@@ -57,7 +57,7 @@ public class HomePage extends Driver {
     //verify updated first name
     public void verifyFirstName(String fname)
     {
-        if(username.getText().contains(fname))
+        if(username.getText().equals(""+fname+" "+PersonalInfoPage.lname))
         {
             logger.info("first name updated successfully");
         }
