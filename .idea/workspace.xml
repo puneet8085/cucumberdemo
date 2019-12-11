@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0378544a-197f-4484-a981-1cf3cc025d78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/reports/cucumber-reports/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OpenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/OpenApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OrderHistoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/OrderHistoryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OrderSummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/OrderSummaryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/PersonalInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/PersonalInfoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ReadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ReadProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDef/TestStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDef/TestStepDef.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,13 +171,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576019785396</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Order confirmation completed">
+      <created>1576029330980</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576029330991</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FInal code" />
     <MESSAGE value="pom.xml updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom.xml updated" />
+    <MESSAGE value="Order confirmation completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Order confirmation completed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Log_Highlighting_(ideolog)" timestamp="1576010594626">
@@ -208,26 +208,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="412" y="217" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1576010709741" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1576019781859">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1576029327657">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1576019781859" />
-    <state width="1323" height="196" key="GridCell.Tab.0.bottom" timestamp="1576029205208">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1576029327657" />
+    <state width="1323" height="196" key="GridCell.Tab.0.bottom" timestamp="1576029520653">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="196" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1576029205208" />
-    <state width="1323" height="196" key="GridCell.Tab.0.center" timestamp="1576029205208">
+    <state width="1323" height="196" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1576029520653" />
+    <state width="1323" height="196" key="GridCell.Tab.0.center" timestamp="1576029520652">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="196" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1576029205208" />
-    <state width="1323" height="196" key="GridCell.Tab.0.left" timestamp="1576029205207">
+    <state width="1323" height="196" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1576029520652" />
+    <state width="1323" height="196" key="GridCell.Tab.0.left" timestamp="1576029520652">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="196" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1576029205207" />
-    <state width="1323" height="196" key="GridCell.Tab.0.right" timestamp="1576029205208">
+    <state width="1323" height="196" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1576029520652" />
+    <state width="1323" height="196" key="GridCell.Tab.0.right" timestamp="1576029520653">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="196" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1576029205208" />
+    <state width="1323" height="196" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1576029520653" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1576027816698">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

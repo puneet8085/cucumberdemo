@@ -27,13 +27,17 @@ private Logger logger;
 //verify order in order summary table
     public void verifyOrder() {
         int rowcount= driver.findElements(By.xpath("//table[@id='order-list']/tbody/tr")).size();
-        for(int i=1; i<=rowcount;i++){
-
+        for(int i=1; i<=rowcount;i++)
+        {
             String rowtext = driver.findElement(By.xpath("//table[@id='order-list']/tbody/tr["+i+"]/td[1]/a")).getText();
-            while(rowtext.equals(OrderSummaryPage.Orderid))
+            if(rowtext.equals(OrderSummaryPage.Orderid))
             {
-                logger.info("Order done Successfully");
+                logger.info("Order is present in order history table");
                 break;
+            }
+            else
+            {
+                logger.info("order not present in order history table");
             }
 
 
